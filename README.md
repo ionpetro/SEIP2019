@@ -8,6 +8,12 @@
 
 This application reads a file with students' grades and generates its histogram.
 
+## Prerequisites
+
+This project was created with:
+
+```java 1.8.120```, ```apache.maven-3.6.0```
+
 ## Getting started
 
 Run on terminal:
