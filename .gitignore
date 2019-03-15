@@ -1,0 +1,12 @@
+target/
+.metadata/
+
+# Remove files that maven creates automatically
+.settings/
+.classpath
+.project
+
+# Remove folder which contains classes
+bin/
+*.class
+
