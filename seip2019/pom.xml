@@ -12,6 +12,7 @@
 	<!-- Refers to the modules Maven projects -->
 	<modules>
 		<module>gradeshistogram</module>
+		<module>Utilities</module>
 	</modules>
 
 </project>
