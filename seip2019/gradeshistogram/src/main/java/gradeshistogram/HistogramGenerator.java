@@ -27,6 +27,7 @@ public class HistogramGenerator {
 	 * the screen.
 	 * 
 	 * @param dataValues Single dimension integer array
+	 * @author gkortzis antonis
 	 */
 
 	public static void generateChart(int[] dataValues) {
