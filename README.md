@@ -2,40 +2,12 @@
 
 <img src="media/maven.png">
 
-### The goal of this project is to create a Java application using the MAVEN build-automation tool.
+### The goal of this project is to create a Java applications using the MAVEN build-automation tool.
 
-## What it does
+## Current Applications Supported
 
-This application reads a file with students' grades and generates its histogram.
-
-## Getting started
-
-Run on terminal:
-
-```mvn compile package```
-
-You will find the executable jar here:
-
-```SEIP2019\seip2019\gradeshistogram\target```
-
-Move to the path above on your terminal and run:
-
-```java -jar gradeshistogram-0.0.1-SNAPSHOT-jar-with-dependencies <path of grades.txt>``` 
-
-Enjoy!
-
-## Result preview
-
-Let's say you want to use this file (grades.txt): [grades.txt](grades.txt)
-
-The result you will get is the following:
-
-<img src="media/result.png">
-
-## Build with
-
-* [Maven](https://maven.apache.org/) - Dependency Management
-
+* [gradeshistogram](seip2019/gradeshistogram/README_gradeshistogram.md)
+* [java metrics](seip2019/Utilities/README_java_metrics.md)
 
 ## Authors
 
