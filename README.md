@@ -6,8 +6,10 @@
 
 ## Current Applications Supported
 
-* [gradeshistogram](seip2019/gradeshistogram/README_gradeshistogram.md)
-* [java metrics](seip2019/Utilities/README_java_metrics.md)
+| Application     | Find out how to use it: | 
+| --------------- |:-----------------:      | 
+| GradesHistogram | [link](seip2019/gradeshistogram/README_gradeshistogram.md)|
+| Java Metrics    | [link](seip2019/Utilities/README_java_metrics.md)         |
 
 ## Authors
 
