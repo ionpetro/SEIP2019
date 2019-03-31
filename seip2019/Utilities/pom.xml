@@ -25,7 +25,7 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>main.java.Utilities.FileIOUtilities</mainClass>
+						<mainClass>Utilities.Client</mainClass>
 					</manifest>
 				</archive>
 				<descriptorRefs>
