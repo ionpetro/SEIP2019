@@ -12,7 +12,7 @@
 	<!-- Refers to the modules Maven projects -->
 	<modules>
 		<module>gradeshistogram</module>
-		<module>Utilities</module>
+		<module>java_code_analyser</module>
 	</modules>
 
 </project>

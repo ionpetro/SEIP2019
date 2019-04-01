@@ -1,4 +1,4 @@
-package Utilities;
+package Code_Analysis;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -27,9 +27,16 @@ public final class FileIOUtilities {
 	 * 
 	 * @parameter path of the File
 	 */
+	
+	private MyUtiliites() {
+		// private Constructor to prevent class instantiation
+		return null; 
+	}
+	
 	public void WriteFile(String path, List<String> content) {
 
 		BufferedWriter bw = null;
+		
 		try {
 
 			File file = new File(path);
@@ -65,7 +72,7 @@ public final class FileIOUtilities {
 	 * This method reads a file. You only give the name of the method and the path
 	 * of the file that you want to read, and it prints all the file.
 	 */
-	public List<String> ReadFile(String path) {
+	public static List<String> ReadFile(String path) {
 
 		BufferedReader reader = null;
 		List<String> list = new ArrayList<>();

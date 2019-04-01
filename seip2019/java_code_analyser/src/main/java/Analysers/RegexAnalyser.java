@@ -1,21 +1,21 @@
-package Utilities;
+package Analysers;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-//RegexAnalyzer
-public class RegexAnalyzer implements General_Analyzer {
+//RegexAnalyser
+public class RegexAnalyser implements General_Analyser {
 	@Override
-	public List<String> Analyze(List<String> input) {
+	public List<String> Analyse(List<String> input) {
 
 		List<String> output = new ArrayList<>();
 		// List formating
 		for (int i = 0; i < input.size(); i++) {
 			input.replaceAll(String::trim);
 		}
-		String pattern = "^ (?![ \\s]*\\r?\\n|import|package|[ \\s]*}\\r?\\n|[ \\s]*//|[ \\s]*/\\*|[ \\s]*\\*).*\\r?\\n";
+		String pattern = "^(?![ \\s]*\\r?\\n|import|package|[ \\s]*}\\r?\\n|[ \\s]*//|[ \\s]*/\\*|[ \\s]*\\*).*\\r?\\n";
 		Pattern r = Pattern.compile(pattern);
 		int count = 0;
 		boolean matches;

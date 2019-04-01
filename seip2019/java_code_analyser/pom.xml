@@ -7,9 +7,9 @@
 		<artifactId>seip2019</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>Utilities</artifactId>
-	<name>Utilities</name>
-	<description>A utility class that contains usual java methods</description>
+	<artifactId>java_code_analyser</artifactId>
+	<name>java_code_analyser</name>
+	<description>This module creates a code analysis for java files</description>
 
 <!-- This block refers to the module's compile information -->
 <properties>
@@ -25,7 +25,7 @@
 			<configuration>
 				<archive>
 					<manifest>
-						<mainClass>Utilities.Client</mainClass>
+						<mainClass>Code_Analysis.Client</mainClass>
 					</manifest>
 				</archive>
 				<descriptorRefs>
