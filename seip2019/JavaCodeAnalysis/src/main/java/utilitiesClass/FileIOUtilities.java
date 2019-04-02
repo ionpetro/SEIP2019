@@ -1,4 +1,4 @@
-package Code_Analysis;
+package utilitiesClass;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -23,17 +23,15 @@ public final class FileIOUtilities {
 	 * This method Writes content to a file. You can call this method giving the
 	 * path of the file you want to write and the content.
 	 * 
-	 * @parameter content
+	 * @param path of the file
 	 * 
-	 * @parameter path of the File
+	 * @param a list of Strings which will be written to a file
 	 */
-	
-	private MyUtiliites() {
-		// private Constructor to prevent class instantiation
-		return null; 
+	private FileIOUtilities() {
+		// private Constructor to prevent class instantiation	
 	}
 	
-	public void WriteFile(String path, List<String> content) {
+	public static void WriteFile(String path, List<String> content) {
 
 		BufferedWriter bw = null;
 		
@@ -54,6 +52,7 @@ public final class FileIOUtilities {
 			
 			for (int i = 1; i< content.size(); i++) {
 				bw.write(content.get(i));
+				bw.write("\n");
 			}
 		} catch (IOException ioe) {
 			ioe.printStackTrace();
@@ -70,12 +69,14 @@ public final class FileIOUtilities {
 
 	/*
 	 * This method reads a file. You only give the name of the method and the path
-	 * of the file that you want to read, and it prints all the file.
+	 * of the file that you want to read, and it returns a list of each line of the file.
+	 * 
+	 * @param String path of the file that will be read
 	 */
 	public static List<String> ReadFile(String path) {
 
 		BufferedReader reader = null;
-		List<String> list = new ArrayList<>();
+		List<String> list = new ArrayList<String>();
 		try {
 			File file = new File(path);
 			reader = new BufferedReader(new FileReader(file));

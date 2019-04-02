@@ -1,6 +1,6 @@
-package Code_Analysis;
+package codeAnalyser;
 
-import Analysers.*;
+import analysers.*;
 //Factory
 public class Analyse_Factory {
 	
