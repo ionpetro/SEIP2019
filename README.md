@@ -9,7 +9,7 @@
 | Application     | Find out how to use it: | 
 | --------------- |:-----------------:      | 
 | GradesHistogram | [link](seip2019/gradeshistogram/README_gradeshistogram.md)|
-| Java Metrics    | [link](seip2019/Utilities/README_java_metrics.md)         |
+| Java Metrics    | [link](seip2019/JavaCodeAnalysis/README_java_metrics.md)         |
 
 Find the **AMAZING UML DIAGRAM** of Java Metrics [**here**](media/uml.png) 
 
