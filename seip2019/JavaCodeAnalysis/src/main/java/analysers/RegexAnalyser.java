@@ -5,12 +5,12 @@ import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-/*
+/**
  * This class is used in order to analyse a list of strings, using regular expressions.
  */
 public class RegexAnalyser implements General_Analyser {
 
-	/*
+	/**
 	 * Analyse method implements the General_Analyser interface. This method takes as an input a List of Strings and 
 	 * returns a List of Strings containing number of classes, number of methods and lines of code.
 	 * 

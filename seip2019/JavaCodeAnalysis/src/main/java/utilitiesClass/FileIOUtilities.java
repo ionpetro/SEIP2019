@@ -19,7 +19,7 @@ import java.util.List;
  */
 public final class FileIOUtilities {
 
-	/*
+	/**
 	 * This method Writes content to a file. You can call this method giving the
 	 * path of the file you want to write and the content.
 	 * 
@@ -39,10 +39,10 @@ public final class FileIOUtilities {
 
 			File file = new File(path);
 
-			/*
-			 * This logic will make sure that the file gets created if it is not present at
-			 * the specified location
-			 */
+			
+			 // This logic will make sure that the file gets created if it is not present at
+			 // the specified location
+			 
 			if (!file.exists()) {
 				file.createNewFile();
 			}
@@ -67,7 +67,7 @@ public final class FileIOUtilities {
 		}
 	}
 
-	/*
+	/**
 	 * This method reads a file. You only give the name of the method and the path
 	 * of the file that you want to read, and it returns a list of each line of the file.
 	 * 

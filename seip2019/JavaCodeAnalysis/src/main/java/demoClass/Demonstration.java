@@ -1,12 +1,12 @@
 package demoClass;
 
 import codeAnalyser.*;
-/*
+/**
  * This class is written as a Demonstration class for the project.
  */
 public class Demonstration {
 
-	/*
+	/**
 	 * Main method
 	 * 
 	 * @param args[0] File source to be read

@@ -6,13 +6,17 @@ import java.util.List;
 import analysers.General_Analyser;
 import utilitiesClass.FileIOUtilities;
 
-/*
+/**
  * This class operates as a facade
+ * Its main purpose is to encapsulate the system behind a simple interface
  */
 public class CodeAnalyser {
 	
-	/*
+	/**
 	 * This method reads a file, analyses it and writes it to a .csv file.
+	 * 
+	 * @param source_file
+	 * @param type_of_analysis
 	 */
 	public void analyse_code(String source_file, String type_of_analysis) {
 
