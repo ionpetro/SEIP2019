@@ -1,4 +1,4 @@
-package analysers;
+package codeAnalyser;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * This class is used in order to analyse a list of strings, using string configuration 
  */
-public class StringAnalyser implements General_Analyser {
+public class StringAnalyser implements GeneralAnalyser {
 
 	/**
 	 * Analyse method implements the General_Analyser interface. This method takes

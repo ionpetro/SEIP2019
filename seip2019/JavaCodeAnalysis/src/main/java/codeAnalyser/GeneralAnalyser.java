@@ -1,10 +1,10 @@
-package analysers;
+package codeAnalyser;
 import java.util.List;
 
 /**
  * This class represents the Strategy design pattern
  */
-public interface General_Analyser {
+public interface GeneralAnalyser {
 	
 	/**
 	 * Analyse method returns a list of strings including the numbers of methods 
