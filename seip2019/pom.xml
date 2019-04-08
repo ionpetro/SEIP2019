@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -6,12 +7,13 @@
 	<artifactId>seip2019</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>SEIP2019</name>
+	<name>seip2019</name>
 	<description>The goal of this project is to create a Java application using the MAVEN build-automation tool.</description>
 
 	<!-- Refers to the modules Maven projects -->
 	<modules>
 		<module>gradeshistogram</module>
+		<module>JavaCodeAnalysis</module>
 	</modules>
 
 </project>
