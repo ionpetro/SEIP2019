@@ -12,7 +12,7 @@
 
 	<!-- This block refers to the module's POM information -->
 	<artifactId>gradeshistogram</artifactId>
-	<name>gradehistogram</name>
+	<name>Grades Histogram</name>
 	<description>This module reads a file with students' grades and generates its histogram</description>
 
 	<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->

@@ -7,7 +7,7 @@
 	<artifactId>seip2019</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
-	<name>seip2019</name>
+	<name>SEiP 2019 projects</name>
 	<description>The goal of this project is to create a Java application using the MAVEN build-automation tool.</description>
 
 	<!-- Refers to the modules Maven projects -->
