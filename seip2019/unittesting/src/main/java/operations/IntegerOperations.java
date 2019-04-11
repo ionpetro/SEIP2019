@@ -60,7 +60,7 @@ public class IntegerOperations {
 			return 2;
 		} else {
 			for (int i=1; i<=number; i++) {
-				product *= 2;
+				product *= 2; //product = product * 2
 			}
 		}
 		
