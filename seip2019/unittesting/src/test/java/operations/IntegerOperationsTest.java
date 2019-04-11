@@ -23,6 +23,12 @@ public class IntegerOperationsTest {
 	}
 	
 	@Test
+	public void test_reverseSign_Exception() {
+		Assert.assertEquals(0, 0);
+
+	} // should I include the 0 input test?
+	
+	@Test
 	public void test_add_normalcase() {
 		Assert.assertEquals(8, io.add(5, 3));
 	}
@@ -39,38 +45,23 @@ public class IntegerOperationsTest {
 		io.add(x, y);
 	}
 	
-	@Test
-	public void test_powerOfTwo_normalCase() {
-		Assert.assertEquals(16, io.powerOfTwo(4));
-	}
-	
-	@Test
-	public void test_powerOfTwo_ZeroInteger() {
-		Assert.assertEquals(1, io.powerOfTwo(0));	
-	}
-	
-	@Test
-	public void test_powerOfTwo_OneCase() {
-		Assert.assertEquals(2, io.powerOfTwo(1));
-		
-	}
-	
 	@Rule
 	public ExpectedException exception = ExpectedException.none();
-	
+
 	@Test
 	public void test_powerOfTwo_negative() {
 		exception.expect(IllegalArgumentException.class);
 		exception.expectMessage(" is not a positive integer.");
 		io.powerOfTwo(-3);
 	}
-	
+
 	@Test
 	public void test_powerOfTwo_overflow() {
 		exception.expect(IllegalArgumentException.class);
 		exception.expectMessage("^2 causes an integer overflow.");
 		io.powerOfTwo(31);
 	}
+	
 	
 	
 }
