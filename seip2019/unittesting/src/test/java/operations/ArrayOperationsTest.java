@@ -9,7 +9,8 @@ import static org.mockito.Mockito.*;
 public class ArrayOperationsTest {
 
 	ArrayOperations arop;
-
+	
+	
 	//TODO failed test
 	@Test
 	public void test_reverseArray_Mocking() {
@@ -31,6 +32,18 @@ public class ArrayOperationsTest {
 		Assert.assertArrayEquals(testValues, arop.reverseArray(filepath));
 
 	}
+	
+	//TODO failed test
+	@Test (expected = IllegalArgumentException.class)
+	public void test_reverseArray_Exception() {
+		FileIO fi = mock(FileIO.class);
+		String filepath = "src/test/resources/something.txt";
+		
+		int[] fileInput = {};
+		when(fi.readFile(filepath)).thenReturn(fileInput);
+	
+		arop.reverseArray(filepath);
+	}
 
 	//TODO failed test
 	@Test
@@ -46,5 +59,18 @@ public class ArrayOperationsTest {
 		Assert.assertEquals(4, arop.findMaxInFile(filepath));
 
 	}
+	
+	//TODO failed test
+	@Test (expected = IllegalArgumentException.class)
+	public void test_findMaxInFile_Exception() {
+		FileIO fi = mock(FileIO.class);
+		String filepath = "src/test/resources/something.txt";
+		
+		int[] fileInput = {};
+		when(fi.readFile(filepath)).thenReturn(fileInput);
+	
+		arop.reverseArray(filepath);
+	}
+
 
 }
