@@ -6,10 +6,7 @@ import org.junit.Assert;
 import filehandlers.FileIO;
 import static org.mockito.Mockito.*;
 
-public class ArrayOperationsTest {
-
-	ArrayOperations arop;
-	
+public class ArrayOperationsTest {	
 	
 	//TODO failed test
 	@Test
@@ -17,6 +14,7 @@ public class ArrayOperationsTest {
 
 		FileIO fi = mock(FileIO.class);
 		IntegerOperations io = mock(IntegerOperations.class);
+		ArrayOperations arop = new ArrayOperations(fi, io);
 
 		String filepath = "src/test/resources/FileIo_ValidTestFile.txt";
 
@@ -37,7 +35,10 @@ public class ArrayOperationsTest {
 	@Test (expected = IllegalArgumentException.class)
 	public void test_reverseArray_Exception() {
 		FileIO fi = mock(FileIO.class);
+		IntegerOperations io = mock(IntegerOperations.class);
+
 		String filepath = "src/test/resources/something.txt";
+		ArrayOperations arop = new ArrayOperations(fi, io);
 		
 		int[] fileInput = {};
 		when(fi.readFile(filepath)).thenReturn(fileInput);
@@ -50,6 +51,9 @@ public class ArrayOperationsTest {
 	public void test_findMaxInFile_Mocking() {
 
 		FileIO fi = mock(FileIO.class);
+		IntegerOperations io = mock(IntegerOperations.class);
+
+		ArrayOperations arop = new ArrayOperations(fi, io);
 
 		String filepath = "src/test/resources/ArrayTest.txt";
 
@@ -64,7 +68,10 @@ public class ArrayOperationsTest {
 	@Test (expected = IllegalArgumentException.class)
 	public void test_findMaxInFile_Exception() {
 		FileIO fi = mock(FileIO.class);
+		IntegerOperations io = mock(IntegerOperations.class);
+
 		String filepath = "src/test/resources/something.txt";
+		ArrayOperations arop = new ArrayOperations(fi, io);
 		
 		int[] fileInput = {};
 		when(fi.readFile(filepath)).thenReturn(fileInput);
