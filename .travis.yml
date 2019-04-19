@@ -12,6 +12,9 @@ before_script:
         - cd seip
         - ls -la
 
+before_install:
+        - sudo apt update
+
 install:
         - sudo apt install maven -y
 
