@@ -9,7 +9,7 @@ branches:
         - master
 
 before_script:
-        - cd seip
+        - cd seip2019
         - ls -la
 
 before_install:
