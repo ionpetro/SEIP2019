@@ -7,7 +7,8 @@ import org.junit.Test;
 import org.junit.Assert;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-import org.junit.runners.Parameterized.*;
+import org.junit.runners.Parameterized.Parameter;
+import org.junit.runners.Parameterized.Parameters;
 
 @RunWith (Parameterized.class)
 public class IntegerOperationsTest_PowerOfTwo_Parameterized {
@@ -21,7 +22,7 @@ public class IntegerOperationsTest_PowerOfTwo_Parameterized {
 	
 	@Parameters
 	public static Collection<Object[]> data() {
-		Object[][] data = new Object[][]{{2,4},{3,8},{4,16},{5,32},{6,64}};
+		Object[][] data = new Object[][]{{0,1},{1,2},{2,4},{3,8},{4,16},{5,32},{6,64}};
 		
 		return Arrays.asList(data);
 	}
