@@ -12,7 +12,7 @@
 
 	<!-- This block refers to the module's POM information -->
 	<artifactId>java_code_analyser</artifactId>
-	<name>java_code_analyser</name>
+	<name>Java Code Metrics Calculator</name>
 	<description>This module creates a code analysis for java files</description>
 
 	<!-- This block refers to the module's compile information -->
