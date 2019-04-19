@@ -26,7 +26,7 @@ public class IntegerOperationsTest {
 	public void test_reverseSign_Exception() {
 		Assert.assertEquals(0, 0);
 
-	} // should I include the 0 input test?
+	}
 	
 	@Test
 	public void test_add_normalcase() {
