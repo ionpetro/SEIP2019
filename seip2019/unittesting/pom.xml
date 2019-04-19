@@ -2,33 +2,38 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-
-	<!-- This block refers to the parent Maven project -->
 	<parent>
 		<groupId>gr.aueb.dmst</groupId>
 		<artifactId>seip2019</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 
-	<!-- This block refers to the module's POM information -->
-	<artifactId>gradeshistogram</artifactId>
-	<name>Grades Histogram</name>
-	<description>This module reads a file with students' grades and generates its histogram</description>
-
-	<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
-	<dependencies>
-		<dependency>
-			<groupId>org.jfree</groupId>
-			<artifactId>jfreechart</artifactId>
-			<version>1.5.0</version>
-		</dependency>
-	</dependencies>
+	<artifactId>unittesting</artifactId>
+	<name>Unittesting SEiP Code Base</name>
+	<description>This module is created in order to create some unittests for java code</description>
 
 	<!-- This block refers to the module's compile information -->
 	<properties>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
 	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>4.12</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-all</artifactId>
+			<version>1.9.5</version>
+			<scope>test</scope>
+		</dependency>
+
+
+	</dependencies>
 
 	<!-- This block refers to the module's building process -->
 	<build>
@@ -38,7 +43,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>main.java.gradeshistogram.HistogramGenerator</mainClass>
+							<mainClass>################</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>

@@ -11,18 +11,9 @@
 	</parent>
 
 	<!-- This block refers to the module's POM information -->
-	<artifactId>gradeshistogram</artifactId>
-	<name>Grades Histogram</name>
-	<description>This module reads a file with students' grades and generates its histogram</description>
-
-	<!-- https://mvnrepository.com/artifact/org.jfree/jfreechart -->
-	<dependencies>
-		<dependency>
-			<groupId>org.jfree</groupId>
-			<artifactId>jfreechart</artifactId>
-			<version>1.5.0</version>
-		</dependency>
-	</dependencies>
+	<artifactId>java_code_analyser</artifactId>
+	<name>Java Code Metrics Calculator</name>
+	<description>This module creates a code analysis for java files</description>
 
 	<!-- This block refers to the module's compile information -->
 	<properties>
@@ -38,7 +29,7 @@
 				<configuration>
 					<archive>
 						<manifest>
-							<mainClass>main.java.gradeshistogram.HistogramGenerator</mainClass>
+							<mainClass>demoClass.Demonstration</mainClass>
 						</manifest>
 					</archive>
 					<descriptorRefs>
