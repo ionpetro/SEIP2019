@@ -1,0 +1,22 @@
+language: java
+
+jdk:
+        - openjdk8
+        - oraclejdk8
+
+branches:
+        only:
+        - master
+
+before_script:
+        - cd seip
+        - ls -la
+
+install:
+        - sudo apt install maven -y
+
+script:
+        - mvn clean package jacoco:report coveralls:report
+
+after_success:
+        - echo "Process terminated successfully"
