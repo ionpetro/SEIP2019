@@ -6,9 +6,21 @@ import org.junit.Assert;
 import filehandlers.FileIO;
 import static org.mockito.Mockito.*;
 
+/**
+ * An class that provides test cases for the 
+ * reverseArray method of ArrayOperations
+ * class.
+ * @author ionpetro (ionpetro@gmail.com)
+ */
 public class ArrayOperationsTest {	
-	
-	//TODO failed test
+
+	/*
+	 * The following test aims to fix the problem described in 
+	 * the previous test_reverseArray test case. In order to 
+	 * isolate the external (to this class) dependencies (FileIO)
+	 * we have to mock them and predefine the results of
+	 * all calls that we plan to execute on the FileIO methods.
+	 */
 	@Test
 	public void test_reverseArray_Mocking() {
 
@@ -31,7 +43,12 @@ public class ArrayOperationsTest {
 
 	}
 	
-	//TODO failed test
+
+	/*
+	 * This test case examines the exception caused when
+	 * the file is empty, thus there is anothing to be revered.
+	 * Mocking is again used predefining the FileIo use.
+	 */
 	@Test (expected = IllegalArgumentException.class)
 	public void test_reverseArray_Exception() {
 		FileIO fi = mock(FileIO.class);
@@ -46,7 +63,15 @@ public class ArrayOperationsTest {
 		arop.reverseArray(filepath);
 	}
 
-	//TODO failed test
+
+	/*
+	 * The following test aims to fix the problem described in 
+	 * the previous test_reverseArray test case. In order to 
+	 * isolate the external (to this class) dependencies (FileIO and 
+	 * IntegerOperations) we have to mock them and predefine 
+	 * the results of all calls that we plan to execute on the
+	 * FileIO and IntegerOperations methods.
+	 */
 	@Test
 	public void test_findMaxInFile_Mocking() {
 
@@ -64,7 +89,12 @@ public class ArrayOperationsTest {
 
 	}
 	
-	//TODO failed test
+	/*
+	 * This test case examines the exception caused when
+	 * the file is empty, thus there is anothing to be revered.
+	 * Mocking is again used predefining the FileIo and Integer-
+	 * Operations use.
+	 */
 	@Test (expected = IllegalArgumentException.class)
 	public void test_findMaxInFile_Exception() {
 		FileIO fi = mock(FileIO.class);

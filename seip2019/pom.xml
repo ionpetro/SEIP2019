@@ -17,6 +17,12 @@
 		<module>unittesting</module>
 	</modules>
 
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+	</properties>
+
 	<build>
 		<plugins>
 			<plugin>
@@ -48,7 +54,7 @@
 				<artifactId>coveralls-maven-plugin</artifactId>
 				<version>4.3.0</version>
 				<configuration>
-					<repoToken>EUYUahuD38O9xtkfkNmSRtzBBiuLBIXHs</repoToken>
+					<repoToken></repoToken>
 				</configuration>
 			</plugin>
 		</plugins>
