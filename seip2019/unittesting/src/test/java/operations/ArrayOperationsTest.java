@@ -54,7 +54,7 @@ public class ArrayOperationsTest {
 		FileIO fi = mock(FileIO.class);
 		IntegerOperations io = mock(IntegerOperations.class);
 
-		String filepath = "src/test/resources/something.txt";
+		String filepath = "src/test/resources/Empty.txt";
 		ArrayOperations arop = new ArrayOperations(fi, io);
 		
 		int[] fileInput = {};
@@ -100,7 +100,7 @@ public class ArrayOperationsTest {
 		FileIO fi = mock(FileIO.class);
 		IntegerOperations io = mock(IntegerOperations.class);
 
-		String filepath = "src/test/resources/something.txt";
+		String filepath = "src/test/resources/Empty.txt";
 		ArrayOperations arop = new ArrayOperations(fi, io);
 		
 		int[] fileInput = {};
