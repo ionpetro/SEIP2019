@@ -65,6 +65,15 @@ public class IntegerOperationsTest {
 	public void test_add_negative() {
 		io.add(-3, -5);
 	}
+
+	/*
+	 * A test case for the exception caused when
+	 * a negative and a positive input is given 
+	 */	
+	@Test (expected = IllegalArgumentException.class)
+	public void test_add_oneNegative() {
+		io.add(3, -5);
+	}
 	
 	/*
 	 * A test case for the exception caused by overflow
