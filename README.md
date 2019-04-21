@@ -5,7 +5,7 @@
 <img src="media/maven.png">
 
 [![Build Status](https://travis-ci.com/ionpetro/SEIP2019.svg?token=xjg2myQJap6s3fR3Dmv6&branch=master)](https://travis-ci.com/ionpetro/SEIP2019)
-[![codecov](https://codecov.io/gh/ionpetro/SEIP2019/branch/master/graphs/badge.svg)](https://codecov.io/gh/ionpetro/SEIP2019)
+[![codecov](https://codecov.io/gh/ionpetro/SEIP2019/branch/master/graph/badge.svg)](https://codecov.io/gh/ionpetro/SEIP2019)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 
