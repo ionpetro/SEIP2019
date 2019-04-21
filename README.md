@@ -4,6 +4,8 @@
 
 <img src="media/maven.png">
 
+[![Build Status](https://travis-ci.com/ionpetro/SEIP2019.svg?token=xjg2myQJap6s3fR3Dmv6&branch=master)](https://travis-ci.com/ionpetro/SEIP2019)
+
 ### The goal of this project is to create a Java applications using the MAVEN build-automation tool.
 
 </div>
