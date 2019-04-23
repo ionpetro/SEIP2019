@@ -59,7 +59,7 @@ public class ArrayOperationsTest {
 		
 		int[] fileInput = {};
 		when(fi.readFile(filepath)).thenReturn(fileInput);
-	
+
 		arop.reverseArray(filepath);
 	}
 

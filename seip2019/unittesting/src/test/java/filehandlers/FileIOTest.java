@@ -1,6 +1,7 @@
 package filehandlers;
 
 import org.junit.Test;
+
 import org.junit.Assert;
 
 /**
@@ -12,10 +13,6 @@ public class FileIOTest {
 	FileIO fi = new FileIO();
 	//This is a valid File
 	String validFile = "src/test/resources/FileIo_ValidTestFile.txt";
-	//This is an invalid File
-	String invalidFile = "src/test/resources/FileIo_InvalidTestFile.txt";
-	//This is a file that does not exist in the resources folder
-	String nonExistFile = "src/test/resources/FileIo_NonExistFile.txt";
 	
 	/*
 	 * A test case that examines the readFile method
@@ -33,6 +30,9 @@ public class FileIOTest {
 	 */
 	@Test (expected=IllegalArgumentException.class)
 	public void test_readFile_nonExist() {
+	//This is a file that does not exist in the resources folder
+	String nonExistFile = "src/test/resources/FileIo_NonExistFile.txt";
+		
 		fi.readFile(nonExistFile);
 	}
 	
@@ -42,6 +42,9 @@ public class FileIOTest {
 	 */
 	@Test (expected=NumberFormatException.class)
 	public void test_readFile_invalid() {
+	//This is an invalid File
+	String invalidFile = "src/test/resources/FileIo_InvalidTestFile.txt";
+		
 		fi.readFile(invalidFile);
 	}
 }
