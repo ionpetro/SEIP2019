@@ -19,7 +19,7 @@ install:
         - sudo apt install maven -y
 
 script:
-        - mvn clean package jacoco:report
+        - mvn clean package jacoco:report cobertura:cobertura
 
 after_success:
         - bash <(curl -s https://codecov.io/bash) -t 8b258a51-b5ee-4d97-859a-191c73e00853 # replace the 1036eb64-2d96-44c6-b132-0dde4e7dfcca with your repository's token obtained by CodeCov
